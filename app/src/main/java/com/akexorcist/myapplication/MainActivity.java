@@ -15,15 +15,19 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         ArrayList<String> itemList = new ArrayList<>();
-        itemList.add("Ake");
-        itemList.add("Trust");
-        itemList.add("Palakorn");
-        itemList.add("Nextzy");
-        itemList.add("Chai");
-        itemList.add("Somkiat");
-        itemList.add("Juthamas");
-        itemList.add("Panupak");
-        itemList.add("Pusadee");
+        itemList.add("Ant");
+        itemList.add("Bird");
+        itemList.add("Cat");
+        itemList.add("Dog");
+        itemList.add("Elephant");
+        itemList.add("Fish");
+        itemList.add("Giraffe");
+        itemList.add("Hen");
+        itemList.add("Ice-cream");
+        itemList.add("Jaguar");
+        itemList.add("Kingkong");
+        itemList.add("Lion");
+        itemList.add("Man");
 
 
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler_view);

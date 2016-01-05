@@ -9,10 +9,12 @@ import android.widget.ProgressBar;
 public class FakeLoadingTask extends AsyncTask<Void, Integer, Void> {
     ProgressBar pbLoading;
     int count;
+    int position;
 
-    public FakeLoadingTask(ProgressBar pbLoading) {
+    public FakeLoadingTask(ProgressBar pbLoading, int position) {
         this.pbLoading = pbLoading;
         this.count = 0;
+        this.position = position;
     }
 
     @Override
@@ -23,7 +25,6 @@ public class FakeLoadingTask extends AsyncTask<Void, Integer, Void> {
                 publishProgress(i);
             }
         } catch (InterruptedException e) {
-            e.printStackTrace();
         }
         return null;
     }
