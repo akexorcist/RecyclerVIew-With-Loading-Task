@@ -29,6 +29,7 @@ public class SimpleAdapter extends RecyclerView.Adapter<SimpleViewHolder> {
     @Override
     public void onBindViewHolder(SimpleViewHolder holder, final int position) {
         new FakeLoadingTask(holder.pbLoading).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, null);
+        holder.tvName.setText(itemList.get(position));
         holder.btnConfirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
